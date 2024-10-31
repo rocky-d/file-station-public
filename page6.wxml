@@ -1,0 +1,15 @@
+<!--pages/page6/page6.wxml-->
+<view class="pageview">
+  <view class="title">
+    <text>九九乘法表</text>
+  </view>
+  <view class="multiplication-table">
+    <block wx:for="{{rows}}" wx:key="index" wx:for-item="row">
+      <view class="row">
+        <block wx:for="{{columns}}" wx:key="colIndex" wx:for-item="col">
+          <text wx:if="{{col <= row}}" class="cell">{{row}} x {{col}} = {{row * col}}</text>
+        </block>
+      </view>
+    </block>
+  </view>
+</view>
