@@ -1,0 +1,75 @@
+/* pages/page7/page7.wxss */
+.pageview {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f8f8;
+  padding: 10px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.top_lft {
+  width: 40%;
+  margin-right: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.top_lft image {
+  width: 60%;
+  height: 60%;
+  margin-left: 30px;
+  border-radius: 50%;
+}
+
+.top_rit {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.top_rit_listview {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.content {
+  width: 100%;
+  flex: 1;
+  padding: 10px;
+}
+
+.listview {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #007aff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background-color: #005bb5;
+}
+
+.bottom {
+  width: 100%;
+  height: 50px;
+  background-color: #f8f8f8;
+}
