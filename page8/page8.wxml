@@ -1,0 +1,57 @@
+<!--pages/page8/page8.wxml-->
+<view class="pageview">
+  <view class="tabs">
+    <block wx:for="{{tabs}}" wx:for-item="tabnum">
+      <view class="{{currentTab===tabnum?'tab_on':'tab'}}" bind:tap="click" data-tab="{{tabnum}}">
+        第 {{tabnum}} 页
+      </view>
+    </block>
+  </view>
+  <view class="content">
+    <block wx:if="{{1===currentTab}}">
+      <view class="tabview">
+        <view class="tabview_title">
+          这里是第1页
+        </view>
+        <swiper class="tabview_swiper" indicator-dots="true">
+          <swiper-item class="swiper_item">
+            swiper-item 1
+          </swiper-item>
+          <swiper-item class="swiper_item">
+            swiper-item 2
+          </swiper-item>
+          <swiper-item class="swiper_item">
+            swiper-item 3
+          </swiper-item>
+        </swiper>
+      </view>
+    </block>
+    <block wx:if="{{2===currentTab}}">
+      <view class="tabview">
+        <view class="tabview_title">
+          这里是第2页
+        </view>
+      </view>
+    </block>
+    <block wx:if="{{3===currentTab}}">
+      <view class="tabview">
+        <view class="tabview_title">
+          这里是第3页
+        </view>
+      </view>
+    </block>
+    <block wx:if="{{4===currentTab}}">
+      <view class="tabview">
+        <view class="tabview_title">
+          这里是第4页
+        </view>
+        <button class="tab4_button" bind:tap="jump">跳转至个人主页</button>
+      </view>
+    </block>
+  </view>
+  <view class="ellipses">
+    <block wx:for="{{tabs}}" wx:for-item="tabnum">
+      <view class="{{currentTab===tabnum?'ellipse_on':'ellipse'}}" bind:tap="click" data-tab="{{tabnum}}"></view>
+    </block>
+  </view>
+</view>
